@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="new.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+
+    <div class="navbar">
+        <div class="logo">
+            <img src="images/logo.jpeg" alt="logo image" height="50px" width="50px">
+        </div>
+        <div class="item">
+            <ul class="nav-item">
+                <li class="nav-items"><a href="">About Us</a></li>
+                <li class="nav-items"><a href="">Doctor</a></li>
+                <li class="nav-items"><a href="">Blog</a></li>
+                <li class="nav-items"><a href="">home</a></li>
+            </ul>
+        </div>
+        <!-- <div class="button"><button id="button1" onclick="openForm()"><a href="">make an apppoinement</a></button></div> -->
+        <button class="open-button" onclick="openForm()">Enter your Symptoms</button>
+    </div>
+    <!-- <div class="container"> -->
+
+    <!-- </div>
+    <div class="container1"> -->
+
+    </div>
+
+
+
+
+
+
+
+    <!-- <button class="open-button" onclick="openForm()">Open Form</button> -->
+
+    <div class="form-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+            <h1>Your Symptoms</h1>
+
+            <label for="name"><b>Name</b></label>
+            <input type="text" placeholder="Enter your Name" name="name" required>
+
+            <label for="age"><b>Age</b></label>
+            <input type="text" placeholder="Enter Your Age" name="age" required>
+
+            <label for="symptoms"><b>Symptoms</b></label>
+            <input type="text" placeholder="Enter your Symptoms" name="email" required>
+
+
+            <button type="submit" class="btn">Submit</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+
+    <script>
+        function openForm() {
+            document.getElementById("myForm").style.display = "block";
+        }
+
+        function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+        }
+    </script>
+
+
+
+
+
+
+    <!-- crousel images -->
+
+    <div class="container">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="images/img4.jpeg" alt="Los Angeles" style="width:100%;">
+                </div>
+
+                <div class="item">
+                    <img src="images/img5.jpeg" alt="Chicago" style="width:100%;">
+                </div>
+
+                <div class="item">
+                    <img src="images/img6.jpeg" alt="New york" style="width:100%;">
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+
+
+    <div class="middle">
+        <h1 class="middleHead">Welcome to our Clinic</h1>
+        <p class="middlePara">The Healtro private medical clinic specializes in a wide variety of health issues,
+            relative to
+            absolutely any age or severity level.
+            Our seasoned team of 45+ surgeons and practical nurses will be glad to come to your aide on a 24/7 basis!
+        </p>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="back-what">
+        <div class="whatWeDo">
+            <h1>What we do</h1>
+            <p>We try to minimize all the strain that you may feel while undergoing a surgery. Our skilled surgeons will
+                be
+                able to perform any kind
+                of operation in a safe, efficient and cost-effective manner!</p>
+        </div>
+
+
+        <div class="whatcom">
+            <div class="row">
+
+                <div class="column">
+                    <h2>Reconstructive surgery</h2>
+                    <p>We are able to fix absolutely any type of aesthetic or medical damage to your face or body. Our
+                        reconstructive surgery uses advanced methods and equipment… Reconstructive surgery is usually
+                        being
+                        performed on abnormal structures of the body caused</p>
+                </div>
+
+                <div class="column">
+                    <h2>Facelifts</h2>
+                    <p>Facelifting is the vital procedure for women, who want to keep their shape up and stay beautiful
+                        and
+                        young-looking for as long as possible, and even longer than that! Reconstructive surgery is
+                        usually
+                        being performed on abnormal structures</p>
+                </div>
+
+                <div class="column">
+                    <h2>Nose Jobs</h2>
+                    <p>Turning a nose around may sound an easy intrusion, but we do not take any of our surgeries
+                        lightly!
+                        We’ve carefully helped hundreds of people to get the nose of their dreams! Nose jobs is usually
+                        being performed on abnormal structures of the body caused</p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="customer">
+
+
+        <div class="cusTem">
+
+            <h1>Happy Customers</h1>
+
+            <p>What people say about us. Here are comments from individuals who have
+                visited Healtro.</p>
+
+        </div>
+
+
+        <div class="row">
+
+            <div class="column">
+                <img src="images/img7.jpeg" width="100px" height="100px" alt="cus1">
+                <p>We are able to fix absolutely any type of aesthetic or medical damage to your face or body. Our
+                    reconstructive surgery uses advanced methods and equipment… Reconstructive surgery is usually
+                    being
+                    performed on abnormal structures of the body caused</p>
+            </div>
+
+            <div class="column">
+                <img src="images/img8.jpeg" width="100px" height="100px" alt="cus2">
+                <p>Facelifting is the vital procedure for women, who want to keep their shape up and stay beautiful
+                    and
+                    young-looking for as long as possible, and even longer than that! Reconstructive surgery is
+                    usually
+                    being performed on abnormal structures</p>
+            </div>
+
+            <div class="column">
+                <img src="images/img9.jpeg" width="100px" height="100px" alt="cus3">
+                <p>Turning a nose around may sound an easy intrusion, but we do not take any of our surgeries
+                    lightly!
+                    We’ve carefully helped hundreds of people to get the nose of their dreams! Nose jobs is usually
+                    being performed on abnormal structures of the body caused</p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="team">
+        <div class="cusTem">
+
+            <h1>Our team</h1>
+
+            <p>Our seasoned and skilled team of surgeons and practical nurses will leave no chance for any disease to
+                survive! Their combined practice proven record shows that more than 90% of all issues are successfully
+                resolved!</p>
+
+        </div>
+
+
+        <div class="widtheq">
+            <div class="row">
+
+                <div class="column">
+                    <img src="images/ravi.jpeg" width="200px" height="200px" alt="tem1">
+                    <p>We are able to fix absolutely any type of aesthetic or medical damage to your face or body. Our
+                        reconstructive surgery uses advanced methods and equipment… Reconstructive surgery is usually
+                        being
+                        performed on abnormal structures of the body caused</p>
+                </div>
+
+                <div class="column">
+                    <img src="images/likhit.jpeg" width="200px" height="200px" alt="tem2">
+                    <p>Facelifting is the vital procedure for women, who want to keep their shape up and stay beautiful
+                        and
+                        young-looking for as long as possible, and even longer than that! Reconstructive surgery is
+                        usually
+                        being performed on abnormal structures</p>
+                </div>
+
+                <div class="column">
+                    <img src="images/shivam.jpg" width="200px" height="200px" alt="tem3">
+                    <p>Turning a nose around may sound an easy intrusion, but we do not take any of our surgeries
+                        lightly!
+                        We’ve carefully helped hundreds of people to get the nose of their dreams! Nose jobs is usually
+                        being performed on abnormal structures of the body caused</p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="bottom-container">
+
+        <p class="copyright">2023 © medi-bridge. All rights are reserved.| <span style="color:blue">Privacy
+                policy</span></p>
+        <a class="footer-link1" href="https://www.linkedin.com/in/likhit-varma-m-74746320a/" target="_blank"><img
+                src="https://play-lh.googleusercontent.com/kMofEFLjobZy_bCuaiDogzBcUT-dz3BBbOrIEjJ-hqOabjK8ieuevGe6wlTD15QzOqw"
+                alt="linkedin" width="24" height="24"></a>
+        <a class="footer-link2" href="https://twitter.com/likhitvarma26" target="_blank"><img
+                src="https://help.twitter.com/content/dam/help-twitter/brand/logo.png" alt="Twitter" width="24"
+                height="24"></a>
+        <a class="footer-link3" href="https://www.instagram.com/likhitvarma__/" target="_blank"><img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1200px-Instagram_logo_2022.svg.png"
+                alt="instagram" width="24" height="24"></a>
+    </div>
+
+
+</body>
+
+</html>
